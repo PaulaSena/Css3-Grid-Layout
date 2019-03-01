@@ -2,18 +2,41 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8"/>
-	<title>Teste2 grid Layout</title>
-	<h1>Testes com grid CSS3</h1>
+	<title>Teste2 grids</title>
+	
+	<h1>Iniciando Div de conteudo CSS3</h1>
 	<style>
+
 	  body{
-	  	border-color: #fff;
+	  	max-width: auto;
+	  	background:rgba(0,0,0,.02);
+	  	color:#333;
 	  	font-family: 'Nunito Semibold';
+	  	font-size: 20px;
 	  	text-align: center;
 	  	}
+          /*metodo principal*/
+	  	.content{
+	  		max-width: 930px;
+	  		margin: 0 auto;
+}
+	  		  		/*padding largura da div*/
+
+	  	.content div{
+	  		background:rgba(0,0,0,.05);
+	  		padding: 30px;
+	  		font-size: 2em;/
+	  	}
+	  	/*.content div:nth-child(odd){
+	  		background: pink;*/
+	  	.content div:nth-child(even){
+	  		background: pink;
+	  	}
+
 	  </style>
 </head>
 <body> 
-	    <div id="content"></div>
+	    <div class="content">
 
 	    <div>1</div>
 	    <div>2</div>
@@ -24,6 +47,23 @@
         <div>7</div>
         <div>8</div>
         <div>9</div>
+    </div>
+    <br>
+    
+    <div>
+    	<section style="background-color: tomato"; >
+    		<article>
+
+    		<p> Notas : Foi criada uma div de conteudo  < div class="content" > dentro dela inseri 9 divs.<br></p>
+
+    		<p>1 - Criada as divs no body fiz um stylo com o CSS3 para ficar melhor visivel a tag body na pagina nela ja inseri a dimenção para que fique altomatica, a cor, fonte, tamanho da fonte e posicionamento do texto.</p>
+    		2 - Para o Stylo das divs foi definido a cor da div principal .content div{ o tamanho da div com padding:30px; a fonte.</p>
+    		<p>3 - Para ficar mais visivel as divs da classe foi necessario estaliza as divs para ficar de cores alternadas camando as divs da classe para definir as cores no par ou no impar .content div:nth-child(even){
+	  		background: pink.</p>
+	  		<p>4 - Apos isso foi definido o tamanho e a margem do meu metodo principal .content{ max-windth ,margin: 0 auto.</p>
+
+    		</p></article>
+    	</section>    </div>
 </body>
 </html>
 
